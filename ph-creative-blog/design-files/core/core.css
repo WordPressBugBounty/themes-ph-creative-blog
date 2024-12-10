@@ -1,0 +1,122 @@
+:root {
+  --phcreativeblog-primary: #FF0F4B;
+  --phcreativeblog-primary-text: #f9ffe7;
+  --phcreativeblog-background-main: #fff;
+  --phcreativeblog-background-vibrant: #49dfd4;
+  --phcreativeblog-background-darker: #eeeeee;
+  --phcreativeblog-background-light: #fffbd5;
+  --phcreativeblog-secondary: #747474;
+  --phcreativeblog-secondary-dark: #B6002E;
+  --phcreativeblog-secondary-text: #FFF;
+  --phcreativeblog-text-dark: #111;
+  --phcreativeblog-text: #555;
+  --phcreativeblog-text-light: #777;
+  --phcreativeblog-header-background: #fff;
+  --phcreativeblog-header-global-background: #000000;
+  --phcreativeblog-header-lighter: #222;
+  --phcreativeblog-header-text: #FFFFFF;
+  --phcreativeblog-menu-text: #232323;
+  --phcreativeblog-top-bar-text: #fffdec;
+  --phcreativeblog-top-bar-background: #3a3a3a;
+  --phcreativeblog-mobile-header-background: #FFFFFF;
+  --phcreativeblog-mobile-header-text: #222222;
+}
+.primary-font {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+.secondary-font {
+  font-family: "Public Sans", sans-serif;
+}
+body {
+  background: var(--phcreativeblog-background-main);
+  font-family: 'Be Vietnam Pro', sans-serif;
+  word-wrap: break-word;
+}
+.custom-background {
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Public Sans", sans-serif;
+}
+a {
+  color: var(--phcreativeblog-secondary);
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+a:hover,
+a:visited {
+  color: var(--phcreativeblog-secondary-dark);
+}
+a:focus {
+  outline: dotted 1px black;
+}
+::-moz-selection {
+  background: var(--phcreativeblog-primary);
+  color: var(--phcreativeblog-primary-text);
+}
+::selection {
+  background: var(--phcreativeblog-primary);
+  color: var(--phcreativeblog-primary-text);
+}
+.phcreativeblog-pagination {
+  text-align: center;
+  margin: 10px 0px;
+}
+.phcreativeblog-pagination .page-numbers {
+  color: var(--phcreativeblog-primary);
+  margin-right: 3px;
+  margin-left: 3px;
+  border: none;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+.phcreativeblog-pagination .page-numbers:hover {
+  background: var(--phcreativeblog-primary);
+  border: none;
+  color: var(--phcreativeblog-primary-text);
+  padding: 10px 15px;
+  -webkit-box-shadow: 0 8px 15px -8px var(--phcreativeblog-background-darker);
+          box-shadow: 0 8px 15px -8px var(--phcreativeblog-background-darker);
+  border-radius: 6px;
+}
+.phcreativeblog-pagination .page-numbers.current {
+  background: var(--phcreativeblog-primary);
+  border: none;
+  color: var(--phcreativeblog-primary-text);
+  padding: 10px 15px;
+  -webkit-box-shadow: 0 8px 15px -8px var(--phcreativeblog-background-darker);
+          box-shadow: 0 8px 15px -8px var(--phcreativeblog-background-darker);
+  border-radius: 6px;
+}
+#primary {
+  margin-top: 20px;
+}
+.comment-content a {
+  text-decoration: underline;
+  color: var(--phcreativeblog-primary);
+}
+.error-search-wrapper .search-submit {
+  display: none;
+}
+.error-search-wrapper input[type="search"] {
+  width: 400px;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+.entry-content a {
+  text-decoration: underline;
+  color: var(--phcreativeblog-primary);
+}

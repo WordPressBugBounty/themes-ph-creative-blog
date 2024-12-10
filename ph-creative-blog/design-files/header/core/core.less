@@ -1,0 +1,62 @@
+@import 'colors';
+
+
+//Basic Styles
+.primary-font {
+	font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.secondary-font {
+    font-family: "Public Sans", sans-serif;
+}
+
+body {
+	background: @background;
+	.primary-font;
+	word-wrap: break-word;
+} 
+
+.custom-background{
+	background-size: contain !important;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	.secondary-font;
+}
+
+a {
+	color: @secondary;
+	transition: 0.4s all ease;
+	&:hover, &:visited {
+		color: @secondary-dark;
+	}
+	&:focus {
+		outline: dotted 1px black;
+	}
+}
+
+::selection {
+	background: @primary;
+	color: @primary-text;
+}
+
+.phcreativeblog-pagination {
+	text-align: center;
+	.page-numbers {
+		color: @text-content;
+		margin-right: 3px;
+		margin-left: 3px;
+		border: solid 1px @text-light;
+		padding: 2px 10px;
+		text-decoration: none;
+		&.current {
+			background: @background-darker;
+		}
+	}
+	a.page-numbers:hover {
+		background: @background-darker;
+	}
+}
+

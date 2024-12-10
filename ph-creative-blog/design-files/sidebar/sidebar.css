@@ -1,0 +1,141 @@
+:root {
+  --phcreativeblog-primary: #FF0F4B;
+  --phcreativeblog-primary-text: #f9ffe7;
+  --phcreativeblog-background-main: #fff;
+  --phcreativeblog-background-vibrant: #49dfd4;
+  --phcreativeblog-background-darker: #eeeeee;
+  --phcreativeblog-background-light: #fffbd5;
+  --phcreativeblog-secondary: #747474;
+  --phcreativeblog-secondary-dark: #B6002E;
+  --phcreativeblog-secondary-text: #FFF;
+  --phcreativeblog-text-dark: #111;
+  --phcreativeblog-text: #555;
+  --phcreativeblog-text-light: #777;
+  --phcreativeblog-header-background: #fff;
+  --phcreativeblog-header-global-background: #000000;
+  --phcreativeblog-header-lighter: #222;
+  --phcreativeblog-header-text: #FFFFFF;
+  --phcreativeblog-menu-text: #232323;
+  --phcreativeblog-top-bar-text: #fffdec;
+  --phcreativeblog-top-bar-background: #3a3a3a;
+  --phcreativeblog-mobile-header-background: #FFFFFF;
+  --phcreativeblog-mobile-header-text: #222222;
+}
+#secondary {
+  border-left: var(--phcreativeblog-background-darker) solid 1px;
+  padding: 15px;
+}
+@media screen and (max-width: 767px) {
+  #secondary {
+    border: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #secondary {
+    display: block;
+    width: 100%;
+  }
+}
+#secondary button {
+  background: var(--phcreativeblog-secondary-dark);
+  border-radius: 8px;
+  color: var(--phcreativeblog-primary-text);
+}
+#secondary .widget {
+  border-radius: 11px;
+  padding: 15px 15px 5px 15px;
+  background: var(--phcreativeblog-background-light);
+  -webkit-box-shadow: 0px 10px 40px var(--phcreativeblog-background-darker);
+          box-shadow: 0px 10px 40px var(--phcreativeblog-background-darker);
+}
+#secondary .widget h2,
+#secondary .widget h3,
+#secondary .widget h4,
+#secondary .widget h1,
+#secondary .widget .widget-title {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  position: relative;
+}
+#secondary .widget ul,
+#secondary .widget ol {
+  margin-left: 3px;
+  padding-left: 0px;
+  list-style: none;
+}
+#secondary .widget li {
+  padding: 8px 0;
+  border-bottom: solid 1px var(--phcreativeblog-background-darker);
+}
+#secondary .widget li:last-child {
+  border-bottom: none;
+}
+#secondary .widget li a {
+  color: var(--phcreativeblog-text-light);
+  text-decoration: none;
+}
+#secondary .widget li a:hover {
+  color: var(--phcreativeblog-secondary-dark);
+}
+#secondary .widget p a {
+  text-decoration: underline;
+  color: var(--phcreativeblog-primary);
+}
+#secondary .widget .widget_block h1:only-child,
+#secondary .widget .widget_block h2:only-child,
+#secondary .widget .widget_block h3:only-child,
+#secondary .widget .widget_block h4:only-child,
+#secondary .widget .widget_block h5:only-child,
+#secondary .widget .widget_block h6:only-child {
+  margin-bottom: -40px;
+}
+/* Custom LESS for the Featured Post section in the sidebar */
+.featured-post-widget {
+  /* Add some padding around the entire widget */
+  padding: 10px;
+}
+.featured-post-widget .fp-sidebar-title {
+  font-size: 20px;
+  margin-bottom: 5px;
+  /* Add some space below the title */
+}
+.featured-post-widget .featured-sidebar-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.featured-post-widget .featured-sidebar-row .sidebar-thumbnail-wrapper {
+  /* Add margin between each post (adjust as needed) */
+  margin-bottom: 10px;
+}
+.featured-post-widget .featured-sidebar-row .sidebar-thumbnail-wrapper img {
+  /* Make sure the thumbnail images fit nicely within their containers */
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  aspect-ratio: 1;
+}
+.featured-post-widget .featured-sidebar-row .sidebar-post-info-wrapper {
+  /* Add margin between the post info and the thumbnail (adjust as needed) */
+  padding: 0px;
+  margin-bottom: 10px;
+}
+.featured-post-widget .featured-sidebar-row .sidebar-post-info-wrapper #entry-title-fp {
+  font-size: 16px;
+  color: var(--phcreativeblog-text);
+  text-transform: capitalize;
+}
+.featured-post-widget .featured-sidebar-row .sidebar-post-info-wrapper .entry-meta {
+  /* Style the entry meta information (date, author, etc.) */
+  font-size: 13px;
+  color: var(--phcreativeblog-text);
+}
+.featured-post-widget .featured-sidebar-row .sidebar-post-info-wrapper .entry-meta a {
+  color: var(--phcreativeblog-secondary);
+}

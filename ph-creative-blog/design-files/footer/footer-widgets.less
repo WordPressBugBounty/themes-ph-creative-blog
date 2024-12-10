@@ -1,0 +1,43 @@
+#footer-widgets {
+	background: @background-light;
+	padding: 20px 0;
+	margin-top: 45px;
+	.widget {
+		h2, h3, h4, h1, .widget-title {
+			font-weight: 700;
+			font-size: 24px;
+			padding-bottom: 10px;
+		}
+		ul, ol {
+			margin-left: 3px;
+			padding-left: 0px;
+			list-style: none;
+		}
+		li {
+			padding: 8px 0;
+			border-bottom: solid 1px @background-darker;
+			&:last-child {
+				border-bottom: none;
+			}
+			a {
+				color: @text-light;
+				text-decoration: none;
+				&:hover {
+					color: @secondary-dark;
+				}
+			}
+		}
+		p{
+			a{
+				text-decoration: underline;
+			   }
+		}
+	}
+	.widget_block {
+		h1,h2,h3,h4,h5,h6 {
+			&:only-child {
+				margin-bottom: -40px;
+			}
+		}
+	}
+}

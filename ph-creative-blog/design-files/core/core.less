@@ -1,0 +1,102 @@
+@import 'colors';
+
+
+//Basic Styles
+.primary-font {
+	font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.secondary-font {
+    font-family: "Public Sans", sans-serif;
+}
+
+body {
+	background: @background;
+	.primary-font;
+	word-wrap: break-word;
+} 
+
+.custom-background{
+	background-size: contain !important;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	.secondary-font;
+}
+
+a {
+	color: @secondary;
+	transition: 0.4s all ease;
+	&:hover, &:visited {
+		color: @secondary-dark;
+	}
+	&:focus {
+		outline: dotted 1px black;
+	}
+}
+
+::selection {
+	background: @primary;
+	color: @primary-text;
+}
+
+.phcreativeblog-pagination {
+	text-align: center;
+	margin: 10px 0px;
+	.page-numbers {
+		color: @primary;
+		margin-right: 3px;
+		margin-left: 3px;
+		border: none;
+		padding: 10px 15px;
+		text-decoration: none;
+		&:hover{
+			background: @primary;
+			border: none;
+			color: @primary-text;
+			padding: 10px 15px;
+			box-shadow: 0 8px 15px -8px @background-darker;
+			border-radius: 6px;
+		}
+		&.current {
+			background: @primary;
+			border: none;
+			color: @primary-text;
+			padding: 10px 15px;
+			box-shadow: 0 8px 15px -8px @background-darker;
+			border-radius: 6px;
+		}
+	}
+}
+
+#primary{
+	margin-top: 20px;
+}
+
+.comment-content{
+	a{
+		text-decoration: underline;
+		color: @primary;
+	}
+}
+
+.error-search-wrapper{
+.search-submit{
+	display: none;
+   }
+  
+	input[type="search"]{
+		width: 400px;
+		border-radius: 10px;
+		padding: 10px 15px;
+	}
+}
+
+.entry-content{
+	a{
+		text-decoration: underline;
+		color: @primary;
+	}
+}

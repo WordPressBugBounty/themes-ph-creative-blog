@@ -1,0 +1,53 @@
+.backToTopBtn{
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	z-index: 1;
+	height: 50px;
+	width: 50px;
+	font-size: 20px;
+	border: none;
+	color: #cccccc;
+	border-radius: 21%;
+	transition: 0.5s;
+	cursor: pointer;	
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	#scroll{
+		max-width: 45px;
+		z-index: 99;
+		position: relative;
+		left: -18px;
+		bottom: 10px;
+
+	}
+  }
+ 
+ 
+  .backToTopBtn.active {
+	visibility: visible;
+	opacity: 1;
+	pointer-events: auto;
+  }
+  .backToTopBtn:not(.active) {
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+}
+
+#colophon {
+	background: @primary;
+	color: @primary-text;
+	padding: 15px;
+	text-align: center;
+	a {
+		color: @primary-text;
+		font-weight: bold;
+		text-decoration: none;
+	}
+}
+

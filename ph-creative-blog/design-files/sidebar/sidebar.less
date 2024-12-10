@@ -1,0 +1,121 @@
+@import '../core/colors';
+#secondary {
+	border-left: @background-darker solid 1px;
+	padding: 15px;
+	@media screen and (max-width: 767px) {
+		border: none;
+	}
+	@media only screen and (max-width:992px){
+		display: block;
+		width: 100%;
+	}
+	button{
+		background: @secondary-dark;
+		border-radius: 8px;
+		color: @primary-text;
+	}
+.widget {
+	border-radius: 11px;
+	padding: 15px 15px 5px 15px;
+	background: @background-light;
+	box-shadow: 0px 10px 40px @background-darker;
+	h2, h3, h4, h1, .widget-title {
+		font-size: 28px;
+		font-weight: 600;
+		letter-spacing: 0;
+		line-height: 1.5em;
+		position: relative;
+	}
+	ul, ol {
+		margin-left: 3px;
+		padding-left: 0px;
+		list-style: none;
+	}
+	li {
+		padding: 8px 0;
+		border-bottom: solid 1px @background-darker;
+		&:last-child {
+			border-bottom: none;
+		}
+		a {
+			color: @text-light;
+			text-decoration: none;
+			&:hover {
+				color: @secondary-dark;
+			}
+		}
+	}
+	p{
+		a{
+			text-decoration: underline;
+			color: @primary;
+		}
+	}
+	.widget_block {
+		h1,h2,h3,h4,h5,h6 {
+			&:only-child {
+				margin-bottom: -40px;
+			}
+		}
+	}
+   }
+}
+
+
+
+/* Custom LESS for the Featured Post section in the sidebar */
+
+.featured-post-widget {
+	/* Add some padding around the entire widget */
+	padding: 10px;
+	.fp-sidebar-title {
+	  font-size: 20px;
+	  margin-bottom: 5px; /* Add some space below the title */
+	}
+	
+	.featured-sidebar-row {
+	  display: flex;
+	  flex-wrap: wrap;
+  
+	  .sidebar-thumbnail-wrapper {
+		/* Add margin between each post (adjust as needed) */
+		margin-bottom: 10px;
+	
+		img {
+		  /* Make sure the thumbnail images fit nicely within their containers */
+		  max-width: 100%;
+		  height: auto;
+		  object-fit: cover;
+		  border-radius: 10px;
+		  aspect-ratio: 1;
+		}
+	  }
+  
+	  .sidebar-post-info-wrapper {
+	/* Add margin between the post info and the thumbnail (adjust as needed) */
+		padding:0px;
+		margin-bottom: 10px;
+
+		#entry-title-fp {
+			font-size: 16px;
+			color: @text-content;
+			text-transform: capitalize;
+		  }
+
+
+		.entry-meta {
+		  /* Style the entry meta information (date, author, etc.) */
+		  font-size: 13px;
+		  color: @text-content;
+		  a{
+			color: @secondary;
+		  }
+		}
+    	}
+	  }
+	}
+  
+  
+
+
+

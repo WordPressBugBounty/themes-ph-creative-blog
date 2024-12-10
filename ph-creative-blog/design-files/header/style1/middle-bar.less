@@ -1,0 +1,43 @@
+#middle-bar{
+	padding: 30px 0px;
+#site-branding {
+	.logo-search-wrapper{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		box-shadow:@background-darker 0px 0px 24px;
+		border-radius: 11px;
+		padding: 12px 32px;
+		#seach-bar-wrapper{
+			position: relative !important;
+			display: flex;
+			justify-content: flex-end;
+			.fa{
+				cursor: pointer;
+				&::before{
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	text-align: center;
+	background: @header-bg;
+	.custom-logo {
+		max-height: 100px;
+		width: auto; 
+	}
+	.site-title {
+		text-align: left;
+		position: relative;
+		z-index: 99;
+		a {
+			font-weight: 800;
+			font-size: 24px;
+			text-decoration: none;
+			&:hover {
+				color: @primary;
+			}
+		}
+	}
+  }
+}
